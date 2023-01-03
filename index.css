@@ -1,19 +1,25 @@
 body {
     margin: 0;
-    background-color: azure;
+    background-color: #f0ffff;
     text-align: center; 
+    background-image: url("images/photo-1546519638-68e109498ffc.png")
 }
 
+
+
 .container {
-    display: flex;
-    justify-content: space-around;
+    display: flex; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 600px;
-    height: 400px;
-    background-color: darkblue;
+    height: 450px;
+    background: linear-gradient(90deg, darkblue, rgb(59, 59, 218)) ;
     margin-left: auto;
     margin-right: auto; 
     margin-top: 20px; 
     border-radius: 20px; 
+    animation: 3s ease-in-out infinite borderani;  
+    box-shadow: 2px 2px 4px black;   
 
 }
 
@@ -53,14 +59,14 @@ h3 {
     color: white; 
     text-align: center;
     font-size: 25px; 
-    font-family: 'Pacifico', cursive;
-
-
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;  
+    letter-spacing: 5px;
+    text-decoration: overline;
+    text-shadow: 2px black;
 }
 
 .score-btn {
-    display: flex; 
-    justify-content: space-around; 
     margin-top: 50px; 
 }
 
@@ -93,5 +99,105 @@ h3 {
     border-radius: 5px; 
     font-size: 30px;
     text-align: center; 
+    margin-top: 20px;  
+    margin-bottom: 20px; 
+}
+
+.foul-btn {
+    padding: 10px; 
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    background: transparent; 
+    color: lightcoral;
+    border: 2px solid lightcoral; 
+    border-radius: 5px; 
+    font-size: 20px;
+    text-align: center; 
     margin-top: 40px; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+    margin-bottom: 40px; 
+}
+
+#btn-wrapper {
+    background-color: lightblue ;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border-radius: 20px;
+    border: 4px solid blue;
+    box-shadow: 2px 2px 4px black;   
+}
+
+#home1:hover, #home2:hover, #home3:hover {
+    color: lightgreen;
+    border-color: lightgreen;
+    transform: scale(110%);
+}
+
+#home1:active, #home2:active, #home3:active {
+    color: green; 
+    border-color: green; 
+    background-color: lightgreen;
+}
+
+#guest1:hover, #guest2:hover, #guest3:hover {
+    color: lightgreen;
+    border-color: lightgreen;
+    transform: scale(110%);
+}
+#guest1:active, #guest2:active, #guest3:active {
+    color: green; 
+    border-color: green; 
+    background-color: lightgreen;
+}
+
+.foul-btn:hover {
+    color: red; 
+    border-color: red; 
+    transform: scale(110%);
+}
+
+.foul-btn:active {
+    color: red; 
+    background-color: #F94F6D;
+}
+
+.newgame-btn:active {
+    color: blue;
+    transform: scale(110%);
+    background-color: aqua;
+}
+
+.newgame-btn:hover {
+    transform: scale(110%);
+}
+
+@keyframes borderani {
+    0% {
+    border: 4px solid blue;      
+    }
+
+    50% {
+    border: 4px solid lightblue; 
+    }
+
+    100% {
+        border: 4px solid blue; 
+    }
+}
+
+@keyframes textani {
+    0% {
+        color: green;      
+        }
+    
+        50% {
+        color: white; 
+        }
+    
+        100% {
+            color: green; 
+        }
 }

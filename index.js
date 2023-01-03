@@ -27,6 +27,14 @@ function guest3() {
     guestScoreEl.textContent = Number(guestScoreEl.textContent) + 3
 }
 
+function awayfoul() {
+    guestScoreEl.textContent = Number(guestScoreEl.textContent) - 1
+}
+
+function homefoul() {
+    homeScoreEl.textContent = Number(homeScoreEl.textContent) - 1
+}
+
 function newgame() {
     homeScoreEl.textContent = 0
     guestScoreEl.textContent = 0

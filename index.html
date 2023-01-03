@@ -2,7 +2,9 @@
     <head>
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Basketball Scoreboard!</title>
     </head>
     <body>
@@ -17,7 +19,7 @@
                    </div>                  
             </div>
             <div>
-                <h3>Away</h3>
+                <h3>AWAY</h3>
                 <h1 id="guestscore-el">0</h1>
                 <div class="score-btn">
                     <button id="guest1" onclick="guest1()">+1</button>
@@ -25,8 +27,8 @@
                     <button id="guest3" onclick="guest3()">+3</button>
                 </div>
             </div>
+            <div id="btn-wrapper"><button class="foul-btn" onclick="homefoul()">Foul!</button><button class="newgame-btn" id="newgame-el" onclick="newgame()">New Game!</button><button class="foul-btn" onclick="awayfoul()">Foul!</button> </div>
         </div>
-        <div id="newgame-btn"><button class="newgame-btn" id="newgame-el" onclick="newgame()">New Game!</button></div>
         <div class="divstuff"></div>
         <script src="index.js"></script>
     </body>
